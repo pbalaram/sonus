@@ -18,6 +18,7 @@
         ],
         "member-ordering": [
             false
-        ]
+        ],
+        "no-reference": false
     }
 }

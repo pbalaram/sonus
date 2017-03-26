@@ -4,9 +4,10 @@
   "description": "Open source cross platform decentralized always-on speech recognition framework",
   "main": "dist/src/sonus.js",
   "scripts": {
-    "test": "eslint . && tslint -c tslint.json src/**/*.ts",
+    "lint": "eslint . && tslint -c tslint.json src/**/*.ts",
     "build": "tsc",
-    "example": "npm run build && node examples/example.js",
+    "test": "mocha",
+    "example": "node examples/example.js",
     "prepublish": "npm run build"
   },
   "repository": {
@@ -35,7 +36,10 @@
     "stream": "0.0.2"
   },
   "devDependencies": {
+    "@types/mocha": "^2.2.40",
+    "assert": "^1.4.1",
     "eslint": "^3.7.0",
+    "mocha": "^3.2.0",
     "ts-node": "^2.1.0",
     "tslint": "^4.5.1",
     "typescript": "^2.2.1"
